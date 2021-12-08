@@ -9,6 +9,8 @@ int eliminate(Matrix *mat, Matrix *b){
   	 * Tutaj należy umieścić właściwą implemntację.
 		 */
 
-		return 0;
+	// zmiana testowa!!!
+	
+	return 0;
 }
 
