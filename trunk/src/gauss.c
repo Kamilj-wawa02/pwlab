@@ -10,6 +10,8 @@ int eliminate(Matrix *mat, Matrix *b){
 		 */
 
 	// zmiana testowa!!!
+	// zmiana testowa 2
+	// test 3
 	
 	return 0;
 }
