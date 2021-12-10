@@ -1,4 +1,6 @@
 #include "selekcja.h"
+#include <math.h> //fabs()
+
 
 void selekcja(Matrix *mat, Matrix *b, int c) { // operacja wykonywana jest dla konkretnej kolumny
 
@@ -8,15 +10,15 @@ void selekcja(Matrix *mat, Matrix *b, int c) { // operacja wykonywana jest dla k
                         elem = w;
         }
 
-
+	/* Jesli elem != c , to zamieniam wiersze c i elem miejscami */
         if (elem != c) {
                 double *tmp = mat->data[c];
                 mat->data[c] = mat->data[elem];
                 mat->data[elem] = tmp;
 
-                tmp = b->data[c];
+                double tr = b->data[k];
                 b->data[c] = b->data[elem];
-                b->data[elem] = tmp;
+                b->data[elem] = tr;
         }
 
 }
