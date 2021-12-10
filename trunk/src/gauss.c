@@ -13,7 +13,7 @@ int eliminate(Matrix *mat, Matrix *b){
 		  selekcja(mat, b, k);
           for(int w = k+1 ; w < mat->r; w++) {
                if( mat->data[k][k] == 0 )
-                        return 1;
+                       return 1;
                double q = mat->data[w][k] / mat->data[k][k];
                for( int i = k ; i < mat->c ; ++i)
                     mat->data[w][i] -= q * mat->data[k][i];
