@@ -7,6 +7,8 @@ void selekcja(Matrix *mat, Matrix *b, int c) { // operacja wykonywana jest dla k
                 if (fabs(mat->data[w][c]) > fabs(mat->data[elem][c]))
                         elem = w;
         }
+
+
         if (elem != c) {
                 double *tmp = mat->data[c];
                 mat->data[c] = mat->data[elem];
