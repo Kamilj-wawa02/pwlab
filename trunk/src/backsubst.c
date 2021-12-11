@@ -23,7 +23,7 @@ int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
 		
 		x->data[w][0] = ( b->data[w][0] - s ) / elem_na_diagon;
 	}
-	
+	 
 
 	return 0;
 }
