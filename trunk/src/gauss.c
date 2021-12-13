@@ -2,12 +2,11 @@
 #include "gauss.h"
 #include "selekcja.h"
 
-/**
+/*
  * Zwraca 0 - elimnacja zakonczona sukcesem
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
  */
 int eliminate(Matrix *mat, Matrix *b){
-
 
         for( int k = 0 ; k < mat->r - 1; k++) {
 		  selekcja(mat, b, k);
